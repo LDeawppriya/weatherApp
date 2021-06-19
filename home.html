@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./StyleSheet1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="./Script1.js" defer></script>
+
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="search">
+            <button><img src="https://img.icons8.com/cotton/20/000000/search--v2.png" /></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Weather in Denver</h2>
+            <h1 class="temp">51°c</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity 60%</div>
+            <div class="wind">Wind speed: 6.5 km/ph</div>
+            <div id="button">
+                <a href=".\index.html">
+                <button id="week">Weekly report</button></a>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
