@@ -1,33 +1,34 @@
-<!DOCTYPE html>
 <html lang="en"dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Login </title>
+    <title>Whether login form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
 </head>
 <body>
-    <div class="center">
-        <h1>Login Here</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input type="text">
-                <span></span>
-                <label>Username</label>
-            </div>
-            <div class="txt_field">
-                <input type="password">
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forgot password?</div>
-            <input type="button" onclick="location.href='./home.html'" value="Login"/>
-            <form action=".\home.html">
-            <a href=".\home.html>"<input type="submit" value="Login"></form></a>
-            <div class="signup_link"> 
-                Not a member? 
-                <a href="#">signup</a>
-            </div>
-        </form>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Sign In </h2>
+    <h2 class="inactive underlineHover">Sign Up </h2>
+
+
+    <!-- Login Form -->
+    <form action="./home.html">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="pw" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In" onclick="validate()">
+    </form>
+
+    
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
+
+  </div>
+</div>
+
 </body>
 </html>
